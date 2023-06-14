@@ -1,9 +1,9 @@
 .card {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  border: 1px solid #112d4e;
+  border: 2px solid #112d4e;
   border-radius: 10px;
   padding: 5px;
-  width: 200px;
+  width: 250px;
   background-color: #dbe2ef;
   color: #112d4e;
   display: flex;
@@ -12,28 +12,51 @@
 }
 
 .card img {
-  width: 150px;
-  border: 1px solid #112d4e;
+  width: 180px;
+  border: 2px solid #112d4e;
   border-radius: 10px;
 }
 
-.card:hover {
-  background-color: #3f72af;
+.card a,
+.card button {
+  background-color: #112d4e;
   color: #dbe2ef;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 2px solid #dbe2ef;
+}
+
+.card button {
+  width: 100px;
+  height: 33px;
+}
+
+.card div {
+  display: flex;
+  gap: 10px;
+}
+
+.card:hover {
+  background-color: #112d4e;
+  color: #dbe2ef;
+  border: 2px solid #dbe2ef;
   cursor: pointer;
   transform: scale(1.05);
   transition: all 1s ease;
 }
 
-.details-card {
-  width: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  border: 1px solid #112d4e;
-  border-radius: 10px;
-  padding: 5px;
+.card img:hover {
+  border: 2px solid #dbe2ef;
+}
+
+.card a:hover,
+.card button:hover {
   background-color: #dbe2ef;
   color: #112d4e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
