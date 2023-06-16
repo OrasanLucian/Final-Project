@@ -8,4 +8,5 @@ export const createProductDetailsCard = (product) =>
      <button class="add-to-cart-btn">Add to cart</button>
      <a href="/src/pages/details/details.html?id=${product.id}">Details</a>
      <p>${product.description}</p>
+     <p>In stock: ${product.stock}</p>
    </div>`;

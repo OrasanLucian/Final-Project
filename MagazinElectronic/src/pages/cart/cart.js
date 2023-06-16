@@ -15,10 +15,10 @@ const showProducts = async () => {
       (productInfo) =>
         (document.getElementById("cart").innerHTML += `<div id="p${product.id}">
         <span>${productInfo.name}</span>
-        <span>${productInfo.price}</span>
-        <img src=${productInfo.image} width="30px" />
+        <span>Price: ${productInfo.price} $</span>
+        <img src=${productInfo.image} />
         <button id=${product.id} class="decrement-quantity">-</button>
-        <span>${product.quantity}</span>
+        <span>Quantity: ${product.quantity}</span>
         <button id=${product.id} class="increment-quantity">+</button>
         </div>`)
     );
@@ -39,7 +39,7 @@ document.getElementById("cart").addEventListener("click", async (e) => {
 
   localStorage.setItem("cart", JSON.stringify(cartArray));
 
-  if (isProductAlreadyInCart(productId, cartArray)) {
+  if (!isProductAlreadyInCart(productId, cartArray)) {
     document
       .getElementById("cart")
       .querySelector("#p" + productId)

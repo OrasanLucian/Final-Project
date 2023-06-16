@@ -22,7 +22,7 @@ body {
   text-decoration: none;
   color: #dbe2ef;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .details-card {
@@ -69,4 +69,9 @@ body {
 
 #details-card p {
   font-size: 18px;
+}
+
+#details-card button:hover {
+  background-color: #dbe2ef;
+  color: #112d4e;
 }
