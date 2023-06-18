@@ -64,17 +64,56 @@ td {
 
 .remove-product,
 .decrement-quantity,
-.increment-quantity {
+.increment-quantity,
+#buy {
   background-color: #112d4e;
   color: #dbe2ef;
   border-radius: 5%;
 }
 
+#buy {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
 .remove-product:hover,
 .decrement-quantity:hover,
-.increment-quantity:hover {
+.increment-quantity:hover,
+#buy:hover {
   background-color: #dbe2ef;
   color: #112d4e;
   border: 1px solid #112d4e;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #112d4e;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#order {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+#total-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #112d4e;
+}
+
+#message {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: green;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
