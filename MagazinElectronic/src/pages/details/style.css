@@ -27,6 +27,7 @@ body {
 
 .details-card {
   width: 70%;
+  height: 500px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   border: 2px solid #112d4e;
   border-radius: 10px;
@@ -34,22 +35,33 @@ body {
   background-color: #dbe2ef;
   color: #112d4e;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 #details-card {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #details-card img {
   border: 2px solid #112d4e;
   border-radius: 10px;
+  height: 60%;
+}
+
+#product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #details-card button {
-  margin-bottom: 20px;
+  margin: 20px 0;
   color: #dbe2ef;
   background-color: #112d4e;
   border-radius: 5px;
@@ -69,9 +81,20 @@ body {
 
 #details-card p {
   font-size: 18px;
+  padding: 0 15px;
 }
 
 #details-card button:hover {
   background-color: #dbe2ef;
   color: #112d4e;
+}
+
+#message {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: green;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
 }

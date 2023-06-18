@@ -24,3 +24,14 @@ window.addEventListener("DOMContentLoaded", () => {
     productsContainer.innerHTML = spinnerHTML;
   }
 });
+
+/*let products = [];
+const searchInput = document.getElementById("input");
+searchInput.addEventListener("input", (e) => {
+  const value = e.target.value.toLowerCase();
+  products.forEach((card) => {
+    const isVisible = card.name.includes(value);
+    card.element.classList.toggle("hide", !isVisible);
+  });
+});
+console.log(products);*/

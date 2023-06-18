@@ -13,14 +13,14 @@ const showProducts = async () => {
   products.forEach((product) => {
     getProductsById(product.id).then(
       (productInfo) =>
-        (document.getElementById("cart").innerHTML += `<div id="p${product.id}">
-        <span>${productInfo.name}</span>
-        <span>Price: ${productInfo.price} $</span>
-        <img src=${productInfo.image} />
-        <button id=${product.id} class="decrement-quantity">-</button>
-        <span>Quantity: ${product.quantity}</span>
-        <button id=${product.id} class="increment-quantity">+</button>
-        </div>`)
+        (document.getElementById("cart").innerHTML += `<tr id="p${product.id}">
+        <td id="product-name">${productInfo.name}</td>
+        <td><img id="products" src=${productInfo.image} /></td>
+        <td>${productInfo.price} $</td>
+        <td><button id=${product.id} class="decrement-quantity">-</button> ${product.quantity} <button id=${product.id} class="increment-quantity">+</button></td>
+        <td></td>
+        <td><button class='remove-product'>Remove</button></td>
+        </tr>`)
     );
   });
 };

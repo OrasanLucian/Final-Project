@@ -25,16 +25,56 @@ body {
   font-size: 20px;
 }
 
-#cart {
+#table-div {
+  display: flex;
+  justify-content: center;
+}
+
+#products {
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #112d4e;
+}
+
+table {
+  text-align: center;
+  color: #112d4e;
   border: 2px solid #112d4e;
+}
+
+#product-name {
+  width: 200px;
+}
+
+th {
+  font-size: 18px;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: #112d4e;
+  color: #dbe2ef;
+}
+
+tr:nth-child(even) {
+  background-color: #dbe2ef;
+}
+
+td {
+  width: 100px;
+}
+
+.remove-product,
+.decrement-quantity,
+.increment-quantity {
+  background-color: #112d4e;
+  color: #dbe2ef;
+  border-radius: 5%;
+}
+
+.remove-product:hover,
+.decrement-quantity:hover,
+.increment-quantity:hover {
   background-color: #dbe2ef;
   color: #112d4e;
-  width: 70%;
-  font-size: 20px;
-  margin-bottom: 10px;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid #112d4e;
+  cursor: pointer;
 }

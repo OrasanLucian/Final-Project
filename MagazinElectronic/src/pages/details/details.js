@@ -13,8 +13,17 @@ window.addEventListener("load", async () => {
     createProductDetailsCard(product);
 });
 
+const validationMessage = document.getElementById("message");
+
 document.getElementById("details-card").addEventListener("click", (e) => {
   if (e.target.classList.contains("add-to-cart-btn")) {
     addProductToCart(productId);
+    validationMessage.style.backgroundColor = "greenyellow";
+    document.getElementById("message").innerHTML =
+      "Product has been added to your cart";
+    setTimeout(function () {
+      validationMessage.style.backgroundColor = "";
+      document.getElementById("message").innerHTML = "";
+    }, 3000);
   }
 });
