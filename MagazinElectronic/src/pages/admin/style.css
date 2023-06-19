@@ -81,3 +81,12 @@ td {
   border: 1px solid #112d4e;
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+  color: #112d4e;
+}
+
+a:hover {
+  text-decoration: underline;
+}
