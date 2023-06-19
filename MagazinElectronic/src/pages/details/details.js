@@ -6,11 +6,17 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const productId = urlParams.get("id");
 
-window.addEventListener("load", async () => {
-  const product = await getProductsById(productId);
+const spinnerHTML = `<div>
+  <img id="spinner" src="https://i.stack.imgur.com/hzk6C.gif" />
+</div>`;
 
-  document.getElementById("details-card").innerHTML =
-    createProductDetailsCard(product);
+const detailsCard = document.getElementById("details-card");
+
+window.addEventListener("load", async () => {
+  detailsCard.innerHTML = spinnerHTML;
+
+  const product = await getProductsById(productId);
+  detailsCard.innerHTML = createProductDetailsCard(product);
 });
 
 const validationMessage = document.getElementById("message");

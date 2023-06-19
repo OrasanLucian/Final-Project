@@ -58,6 +58,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 600px;
 }
 
 #details-card button {
@@ -80,6 +81,7 @@ body {
 }
 
 #details-card p {
+  text-align: center;
   font-size: 18px;
   padding: 0 15px;
 }

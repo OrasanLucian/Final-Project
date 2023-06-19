@@ -11,27 +11,29 @@ window.addEventListener("DOMContentLoaded", () => {
 		`;
 
   const productsContainer = document.getElementById("products");
+  const searchInput = document.getElementById("search-input");
+  let products = [];
 
-  getProducts().then((products) => {
-    isLoading = false;
-    const productHTML = products
+  const showProducts = () => {
+    const filteredProducts = products.filter((product) =>
+      product.name.toLowerCase().includes(searchInput.value.toLowerCase())
+    );
+
+    const productHTML = filteredProducts
       .map((product) => createProductCard(product))
       .join("");
     productsContainer.innerHTML = productHTML;
+  };
+
+  getProducts().then((data) => {
+    isLoading = false;
+    products = data;
+    showProducts();
+
+    searchInput.addEventListener("input", showProducts);
   });
 
   if (isLoading) {
     productsContainer.innerHTML = spinnerHTML;
   }
 });
-
-/*let products = [];
-const searchInput = document.getElementById("input");
-searchInput.addEventListener("input", (e) => {
-  const value = e.target.value.toLowerCase();
-  products.forEach((card) => {
-    const isVisible = card.name.includes(value);
-    card.element.classList.toggle("hide", !isVisible);
-  });
-});
-console.log(products);*/
