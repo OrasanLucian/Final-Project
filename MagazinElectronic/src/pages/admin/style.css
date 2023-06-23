@@ -1,6 +1,8 @@
 body {
   background-color: #e0e0e0;
   margin: 0 0 20px 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .navbar {
@@ -19,10 +21,13 @@ body {
 }
 
 .navbar a {
-  text-decoration: none;
   color: #dbe2ef;
   font-weight: bold;
   font-size: 20px;
+}
+
+.navbar a:hover {
+  text-decoration: none;
 }
 
 #spinner {
@@ -56,7 +61,6 @@ table {
 th {
   font-size: 18px;
   padding: 15px;
-  text-transform: uppercase;
   background-color: #112d4e;
   color: #dbe2ef;
 }
@@ -70,6 +74,8 @@ td {
 }
 
 .delete-product {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   background-color: #112d4e;
   color: #dbe2ef;
   border-radius: 5%;
@@ -98,11 +104,13 @@ a:hover {
 }
 
 #add-new-product button {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   background-color: #112d4e;
   color: #dbe2ef;
   border-radius: 5%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #add-new-product button:hover {
@@ -118,6 +126,7 @@ a:hover {
   width: 700px;
   padding: 20px;
   background-color: #e0e0e0;
+  color: #112d4e;
   border-radius: 5px;
   margin-top: 20px;
 }
@@ -145,9 +154,11 @@ a:hover {
 }
 
 #form-details input[type="submit"] {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   width: 20%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #112d4e;
   color: #dbe2ef;
   border-radius: 5%;

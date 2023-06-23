@@ -1,5 +1,6 @@
 .card {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   border: 2px solid #112d4e;
   border-radius: 10px;
   width: 250px;
@@ -27,7 +28,8 @@
   height: 100%;
   width: 100%;
   padding: 12px 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
 

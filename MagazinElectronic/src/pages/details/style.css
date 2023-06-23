@@ -26,9 +26,10 @@ body {
 }
 
 .details-card {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   width: 70%;
   height: 500px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   border: 5px solid #112d4e;
   border-radius: 10px;
   padding: 5px;
@@ -62,6 +63,8 @@ body {
 }
 
 #details-card button {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin: 20px 0;
   color: #dbe2ef;
   background-color: #112d4e;
@@ -92,7 +95,8 @@ body {
 }
 
 #message {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: green;
   font-size: 20px;
   text-align: center;
