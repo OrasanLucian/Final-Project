@@ -90,3 +90,77 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+#add-new-product {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#add-new-product button {
+  background-color: #112d4e;
+  color: #dbe2ef;
+  border-radius: 5%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#add-new-product button:hover {
+  background-color: #dbe2ef;
+  color: #112d4e;
+  border: 1px solid #112d4e;
+  cursor: pointer;
+}
+
+#form-details {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  padding: 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#form-details div {
+  margin-bottom: 10px;
+}
+
+#form-details label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#form-details input[type="text"],
+#form-details input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #112d4e;
+}
+
+#form-details div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+#form-details input[type="submit"] {
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #112d4e;
+  color: #dbe2ef;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+
+#form-details input[type="submit"]:hover {
+  background-color: #dbe2ef;
+  color: #112d4e;
+  border: 1px solid #112d4e;
+  cursor: pointer;
+}
+
+#form-admin {
+  display: none;
+}
