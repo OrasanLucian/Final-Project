@@ -59,3 +59,30 @@ input[type="text"] {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (min-width: 831px) and (max-width: 1130px) {
+  #products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 531px) and (max-width: 830px) {
+  #products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 530px) {
+  #products {
+    grid-template-columns: 1fr;
+  }
+  .navbar,
+  .menu {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+  }
+  .navbar {
+    padding-top: 20px;
+  }
+}

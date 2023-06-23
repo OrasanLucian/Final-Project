@@ -104,3 +104,42 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+@media (min-width: 531px) and (max-width: 830px) {
+  .details-card {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+  }
+  #details-card img {
+    width: 150px;
+    height: auto;
+  }
+  #product-info p {
+    width: 300px;
+  }
+}
+
+@media (max-width: 530px) {
+  .navbar,
+  .menu {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+  }
+  .navbar {
+    padding-top: 20px;
+  }
+  .details-card {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+  }
+  #details-card img {
+    width: 120px;
+    height: auto;
+  }
+  #product-info p {
+    width: 200px;
+  }
+}

@@ -124,3 +124,15 @@ a:hover {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+@media (max-width: 530px) {
+  .navbar,
+  .menu {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+  }
+  .navbar {
+    padding-top: 20px;
+  }
+}

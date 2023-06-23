@@ -175,3 +175,15 @@ a:hover {
 #form-admin {
   display: none;
 }
+
+@media (max-width: 530px) {
+  .navbar,
+  .menu {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+  }
+  .navbar {
+    padding-top: 20px;
+  }
+}
