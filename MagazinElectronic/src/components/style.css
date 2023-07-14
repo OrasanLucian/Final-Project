@@ -1,7 +1,7 @@
 .card {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  border: 2px solid #112d4e;
+  box-shadow: 0px 0px 5px 0px #112d4e;
   border-radius: 10px;
   width: 250px;
   background-color: #dbe2ef;
@@ -13,7 +13,7 @@
 
 .card img {
   width: 180px;
-  border: 2px solid #112d4e;
+  box-shadow: 0px 0px 5px 0px #112d4e;
   border-radius: 10px;
 }
 
@@ -34,15 +34,11 @@
 }
 
 .card:hover {
-  background-color: #112d4e;
-  color: #dbe2ef;
-  border: 2px solid #dbe2ef;
-  cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: all 1s ease;
 }
 
 .card a:hover {
-  background-color: #dbe2ef;
-  color: #112d4e;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px #dbe2ef inset;
 }

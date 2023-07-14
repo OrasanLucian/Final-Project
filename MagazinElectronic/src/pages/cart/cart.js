@@ -106,6 +106,8 @@ function onBuyFinishOrder() {
   document.getElementById("message").innerHTML = "Thank you for your purchase";
   setTimeout(function () {
     validationMessage.style.backgroundColor = "";
+    localStorage.clear();
+    location.reload();
     document.getElementById("message").innerHTML = "";
   }, 3000);
 }

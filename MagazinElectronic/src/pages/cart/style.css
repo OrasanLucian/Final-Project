@@ -44,7 +44,8 @@ body {
 table {
   text-align: center;
   color: #112d4e;
-  border: 2px solid #112d4e;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 5px 0px #112d4e;
 }
 
 #product-name {
